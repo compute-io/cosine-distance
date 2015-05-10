@@ -22,7 +22,12 @@ var cosine = require( 'compute-cosine-distance' );
 
 #### cosine( x, y[, accessor] )
 
-Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays `x` and `y` of equal length.
+Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays `x` and `y` of equal length, defined as
+
+<div align="center">
+	<img src="https://github.com/compute-io/cosine-distance/blob/master/docs/img/eqn.png" alt="Formula of Cosine Distance" height="64px">
+	<br>
+</div>
 
 ``` javascript
 
@@ -58,6 +63,13 @@ function getValue( d, i, j ) {
 var val = cosine( x, y, getValue );
 // returns 0.1180829
 ```
+
+The accessor `function` is provided three arguments:
+
+-	__d__: current datum.
+-	__i__: current datum index.
+-	__j__: array index; e.g., array `x` has index `0` and array `y` has index `1`.
+
 
 If provided empty `arrays`, the function returns `null`.
 
