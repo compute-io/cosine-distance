@@ -25,12 +25,25 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "distance",
+    "similarity",
+    "information theory",
+    "mathematics",
+    "math",
+    "array",
+    "dist",
+    "difference"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/cosine-distance/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compute-dot": "^1.1.0",
+    "compute-l2norm": "^1.1.0",
+    "validate.io-array": "^1.0.3",
+    "validate.io-function": "^1.0.2"
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",

@@ -17,19 +17,52 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-cosine-distance' );
+var cosine = require( 'compute-cosine-distance' );
 ```
 
-#### foo( arr )
+#### cosine( x, y[, accessor] )
 
-What does this function do?
+Computes the cosine distance between two arrays `x` and `y`. The array must be arrays of equal length.
 
+``` javascript
+
+var c = [ 5, 23, 2, 5, 9 ],
+    d = [ 3, 21, 2, 5, 14 ];
+
+var dist = cosine( c, d );
+// approx 0.0246
+```
+
+To compute the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between nested `array` values, provide an accessor `function` for accessing `numeric` values.
+
+``` javascript
+var x = [
+	{'x':2},
+	{'x':4},
+	{'x':5}
+];
+
+var y = [
+	[1,3],
+	[2,1],
+	[3,5]
+];
+
+function getValue( d, i, j ) {
+	if ( j === 0 ) {
+		return d.x;
+	}
+	return d[ 1 ];
+}
+
+var val = cosine( x, y, getValue );
+// returns 0.1180829
+```
+
+If provided empty `arrays`, the function returns `null`.
 
 ## Examples
 
-``` javascript
-var foo = require( 'compute-cosine-distance' );
-```
 
 To run the example code from the top-level application directory,
 
@@ -69,7 +102,7 @@ $ make view-cov
 ---
 ## License
 
-[MIT license](http://opensource.org/licenses/MIT). 
+[MIT license](http://opensource.org/licenses/MIT).
 
 
 ## Copyright
