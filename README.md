@@ -2,7 +2,7 @@ cosine-distance
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Calculate the cosine distance between arrays
+> Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between arrays
 
 
 ## Installation
@@ -22,7 +22,7 @@ var cosine = require( 'compute-cosine-distance' );
 
 #### cosine( x, y[, accessor] )
 
-Computes the cosine distance between two arrays `x` and `y`. The array must be arrays of equal length.
+Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays `x` and `y` of equal length.
 
 ``` javascript
 
