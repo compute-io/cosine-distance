@@ -25,7 +25,7 @@ var cosine = require( 'compute-cosine-distance' );
 Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays `x` and `y` of equal length, defined as
 
 <div align="center">
-	<img src="https://github.com/compute-io/cosine-distance/blob/master/docs/img/eqn.png" alt="Formula of Cosine Distance" height="64px">
+	<img src="https://github.com/compute-io/cosine-distance/blob/master/docs/img/eqn.png" alt="Formula of Cosine Distance" height="96px">
 	<br>
 </div>
 
