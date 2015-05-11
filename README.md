@@ -24,10 +24,12 @@ var cosine = require( 'compute-cosine-distance' );
 
 Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays `x` and `y` of equal length, defined as
 
-<div align="center">
-	<img src="https://github.com/compute-io/cosine-distance/blob/master/docs/img/eqn.png" alt="Formula of Cosine Distance" height="96px">
+
+<div class="equation" align="center" data-raw-text="d(\mathbf{x},\mathbf{y}) = 1 - {A \cdot B \over \|A\| \|B\|} = 1- \frac{ \sum\limits_{i=0}^{n-1}{A_i \times B_i} }{ \sqrt{\sum\limits_{i=0}^{n-1}{(A_i)^2}} \times \sqrt{\sum\limits_{i=0}^{n-1}{(B_i)^2}} } " data-equation=“eq:cosine_distance>
+	<img src="https://cdn.rawgit.com/compute-io/euclidean-distance/c554ead93c215e769cbd78cff43ab97d802d344a/docs/img/eqn.svg" alt="Cosine distance formula">
 	<br>
 </div>
+
 
 ``` javascript
 
