@@ -11,7 +11,7 @@ Cosine Distance
 	<br>
 </div>
 
-The computed similarity resides on the interval `[-1,1]`, with vectors having the same orientation will have a similarity equal to `1`, orthogonal orientation a similarity equal to `0`, and having opposite orientation a similarity equal to `-1`. The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) seeks to express vector dissimilarity in positive space and does so by subtracting the similarity from `1`.
+The computed similarity resides on the interval `[-1,1]`, where vectors with the same orientation have a similarity equal to `1`, orthogonal orientation a similarity equal to `0`, and opposite orientation a similarity equal to `-1`. The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) seeks to express vector dissimilarity in positive space and does so by subtracting the similarity from `1`.
 
 <div class="equation" align="center" data-raw-text="d(\mathbf{x},\mathbf{y}) = 1 - s(\mathbf{x},\mathbf{y})" data-equation="eq:cosine_distance">
 	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/6b9332117ac97384a9c1f1e06b002094c4bfa54b/docs/img/eqn_distance.svg" alt="Cosine distance formula">
