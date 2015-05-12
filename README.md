@@ -7,14 +7,14 @@ Cosine Distance
 [Cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) defines vector similarity in terms of the angle separating two vectors.
 
 <div class="equation" align="center" data-raw-text="s(\mathbf{x},\mathbf{y}) = {\mathbf{x} \cdot \mathbf{y} \over \|\mathbf{x}\| \|\mathbf{y}\|} = \frac{ \sum\limits_{i=0}^{n-1}{x_i y_i} }{ \sqrt{\sum\limits_{i=0}^{n-1}{(x_i)^2}} \times \sqrt{\sum\limits_{i=0}^{n-1}{(y_i)^2}} }" data-equation="eq:cosine_similarity">
-	<img src="" alt="Cosine similarity formula">
+	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/6b9332117ac97384a9c1f1e06b002094c4bfa54b/docs/img/eqn_similarity.svg" alt="Cosine similarity formula">
 	<br>
 </div>
 
 The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) is related to the similarity according to
 
-<div class="equation" align="center" data-raw-text="" data-equation="eq:cosine_distance">
-	<img src="" alt="Cosine distance formula">
+<div class="equation" align="center" data-raw-text="d(\mathbf{x},\mathbf{y}) = 1 - s(\mathbf{x},\mathbf{y})" data-equation="eq:cosine_distance">
+	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/6b9332117ac97384a9c1f1e06b002094c4bfa54b/docs/img/eqn_distance.svg" alt="Cosine distance formula">
 	<br>
 </div>
 
