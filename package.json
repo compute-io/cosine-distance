@@ -1,6 +1,6 @@
 {
   "name": "compute-cosine-distance",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Calculate the cosine distance between arrays",
   "author": {
     "name": "Philipp Burckhardt",
