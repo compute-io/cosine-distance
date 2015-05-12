@@ -4,21 +4,19 @@ Cosine Distance
 
 > Computes the [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) between two arrays.
 
-[Cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) defines vector similarity in terms of the angle separating two vectors.
+[Cosine similarity](https://github.com/compute-io/cosine-similarity) defines vector similarity in terms of the angle separating two vectors.
 
 <div class="equation" align="center" data-raw-text="s(\mathbf{x},\mathbf{y}) = {\mathbf{x} \cdot \mathbf{y} \over \|\mathbf{x}\| \|\mathbf{y}\|} = \frac{ \sum\limits_{i=0}^{n-1}{x_i y_i} }{ \sqrt{\sum\limits_{i=0}^{n-1}{(x_i)^2}} \times \sqrt{\sum\limits_{i=0}^{n-1}{(y_i)^2}} }" data-equation="eq:cosine_similarity">
 	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/6b9332117ac97384a9c1f1e06b002094c4bfa54b/docs/img/eqn_similarity.svg" alt="Cosine similarity formula">
 	<br>
 </div>
 
-The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) is related to the similarity according to
+The computed similarity resides on the interval `[-1,1]`, with vectors having the same orientation will have a similarity equal to `1`, orthogonal orientation a similarity equal to `0`, and having opposite orientation a similarity equal to `-1`. The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) seeks to express vector dissimilarity in positive space and does so by subtracting the similarity from `1`.
 
 <div class="equation" align="center" data-raw-text="d(\mathbf{x},\mathbf{y}) = 1 - s(\mathbf{x},\mathbf{y})" data-equation="eq:cosine_distance">
 	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/6b9332117ac97384a9c1f1e06b002094c4bfa54b/docs/img/eqn_distance.svg" alt="Cosine distance formula">
 	<br>
-</div>
-
-allowing vector dissimilarity to be expressed in positive space. 
+</div> 
 
 
 ## Installation
