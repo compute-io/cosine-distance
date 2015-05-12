@@ -43,7 +43,9 @@
   "bugs": {
     "url": "https://github.com/compute-io/cosine-distance/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compute-cosine-similarity": "^1.0.0"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",
