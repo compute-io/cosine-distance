@@ -6,15 +6,15 @@ Cosine Distance
 
 [Cosine similarity](http://en.wikipedia.org/wiki/Cosine_similarity) defines vector similarity in terms of the angle separating two vectors.
 
-<div class="equation" align="center" data-raw-text="" data-equation="eq:cosine_similarity">
-	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/e749d08c4307235ab3f26fa8ff75363183293c39/docs/img/eqn.svg" alt="Cosine similarity formula">
+<div class="equation" align="center" data-raw-text="s(\mathbf{x},\mathbf{y}) = {\mathbf{x} \cdot \mathbf{y} \over \|\mathbf{x}\| \|\mathbf{y}\|} = \frac{ \sum\limits_{i=0}^{n-1}{x_i y_i} }{ \sqrt{\sum\limits_{i=0}^{n-1}{(x_i)^2}} \times \sqrt{\sum\limits_{i=0}^{n-1}{(y_i)^2}} }" data-equation="eq:cosine_similarity">
+	<img src="" alt="Cosine similarity formula">
 	<br>
 </div>
 
 The [cosine distance](http://en.wikipedia.org/wiki/Cosine_similarity) is related to the similarity according to
 
-<div class="equation" align="center" data-raw-text="d(\mathbf{x},\mathbf{y}) = 1 - {A \cdot B \over \|A\| \|B\|} = 1 - \frac{ \sum\limits_{i=0}^{n-1}{A_i \times B_i} }{ \sqrt{\sum\limits_{i=0}^{n-1}{(A_i)^2}} \times \sqrt{\sum\limits_{i=0}^{n-1}{(B_i)^2}} } " data-equation="eq:cosine_distance">
-	<img src="https://cdn.rawgit.com/compute-io/cosine-distance/e749d08c4307235ab3f26fa8ff75363183293c39/docs/img/eqn.svg" alt="Cosine distance formula">
+<div class="equation" align="center" data-raw-text="" data-equation="eq:cosine_distance">
+	<img src="" alt="Cosine distance formula">
 	<br>
 </div>
 
