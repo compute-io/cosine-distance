@@ -1,9 +1,15 @@
 'use strict';
 
-var cosine = require( './../lib' );
+var distance = require( './../lib' );
 
-var c = [ 5, 23, 2, 5, 9 ],
-    d = [ 3, 21, 2, 5, 14 ];
+var x = new Array( 100 ),
+	y = new Array( 100 ),
+	d;
 
-var dist = cosine( c, d );
-console.log(dist);
+for ( var i = 0; i < x.length; i++ ) {
+	x[ i ] = Math.round( Math.random()*100 );
+	y[ i ] = Math.round( Math.random()*100 );
+}
+d = distance( x, y );
+
+console.log( d );
